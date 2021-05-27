@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/ic_action_notifications_none"
+        android:title="Noticicaciones"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/logIn"
+        android:title="Registrarse"
+        />
+    <item
+        android:id="@+id/create"
+        android:title="Crear libro"
+        />
+</menu>

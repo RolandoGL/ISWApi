@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">bibliotecaISW</string>
+    <string name="create_account">Crear cuenta</string>
+    <string name="notifications">Mis notificaciones</string>
+    <string name="welcome">Bienevenido</string>
+    <string name="create_book">Bienevenido</string>
+</resources>
