@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bibliotecaisw">
+
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,18 +12,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BibliotecaISW">
-        <activity android:name=".registroActivity"
+        <activity android:name=".Activity_books"></activity>
+        <activity
+            android:name=".registroActivity"
             android:parentActivityName=".listarLibrosActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".listarLibrosActivity"/>
+                android:value=".listarLibrosActivity" />
         </activity>
-        <activity android:name=".listarLibrosActivity"></activity>
-        <activity android:name=".crearLibroActivity"
+        <activity android:name=".listarLibrosActivity" />
+        <activity
+            android:name=".crearLibroActivity"
             android:parentActivityName=".listarLibrosActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".listarLibrosActivity"/>
+                android:value=".listarLibrosActivity" />
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void crear(View view){
-        Intent intent = new Intent(this, listarLibrosActivity.class);
+        Intent intent = new Intent(this, Activity_books.class);
         startActivity(intent);
 
     }
