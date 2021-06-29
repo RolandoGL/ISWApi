@@ -1,6 +1,7 @@
 package com.example.bibliotecaisw.Interface;
 
 import com.example.bibliotecaisw.Model.Books;
+import com.example.bibliotecaisw.Model.userLogin;
 import com.example.bibliotecaisw.Model.userRegister;
 
 import java.util.List;
@@ -21,5 +22,10 @@ public interface miBibliotecaOnlineAPI {
     Call<userRegister> createUsers( @Field("name") String name,
                                     @Field("email") String email,
                                     @Field("password") String password);
+    @POST("manage/auth/login")
+    @FormUrlEncoded
+    Call<userLogin> login(
+            @Field("email") String name,
+            @Field("password") String email);
 
 }
