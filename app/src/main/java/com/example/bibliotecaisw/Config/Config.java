@@ -5,12 +5,12 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 public class Config {
     //aqui mi url de la api
-    private static final String BASEURL = "http://192.168.0.32/bibliotecaISW/public/api/";
+    private static final String BASEURL = "http://192.168.56.1/bibliotecaISW/public/api/";
     private static Retrofit retrofit;
 
     public static Retrofit getRetrofit() {
         if (retrofit == null) {
-            retrofit = new retrofit2.Retrofit.Builder()
+            retrofit = new  retrofit2.Retrofit.Builder()
                     .baseUrl(BASEURL)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
